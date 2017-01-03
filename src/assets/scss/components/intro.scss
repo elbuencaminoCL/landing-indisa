@@ -7,7 +7,6 @@
 
 	.intro__bg {
 		position: relative;
-		text-align: center;
 		img {
 			object-fit: cover;
 		}
@@ -23,12 +22,12 @@
 	}
 
 	.intro__columns {
-		margin: 0 0 0 auto;
-		text-align: center;
 		.heading__title {
-			color: white;
+			color: #029ddd;
 			line-height: 1;
 			font-size: 24px;
+			text-align: center;
+			text-transform: uppercase;
 		}
 		.heading__sub-title {
 			color: white;
@@ -41,21 +40,8 @@
 	}
 
 	.intro__header {
-		bottom: 100px;
 		padding: 1rem 0;
 		position: relative;
-		&:before {
-			background-image: url( '../img/blur-image.png' );
-			background-position: 1px 0;
-			background-size: cover;
-			bottom: 0;
-			content: "";
-			filter: blur(8px);
-			left: 0;
-			position: absolute;
-			right: 0;
-			top: 0;
-		}
 		.intro__columns {
 			position: relative;
 		}
@@ -63,7 +49,6 @@
 
 	.intro__content {
 		background-color: rgba( 255,255,255,.7 );
-		margin-top: -100px;
 	}
 
 	.intro__plan {
@@ -74,11 +59,53 @@
 		}
 	}
 
-	.intro__plan__description {
-		color: #535548;
-		margin-bottom: 2rem;
-		&:last-of-type {
+	.intro__plan__content {
+		.button {
+			display: block;
 			margin-bottom: 0;
+		}
+	}
+
+	.intro__plan__desc {
+		color: white;
+		margin-bottom: 0;
+	}
+
+	.intro__plan__list {
+		padding: 14px 18px;
+		text-align: center;
+		&:first-of-type {
+			background-color: rgba( 111,190,223,.8 );
+		}
+		&:nth-of-type(2) {
+			background-color: rgba( 231,159,83,.8 );
+		}
+		&:nth-of-type(3) {
+			background-color: rgba( 65,99,144,.8 );
+		}
+		&:last-of-type {
+			background-color: rgba( 178,106,170,.8 );
+		}
+	}
+
+	.intro__plan__price {
+		color: white;
+		font-size: 78px;
+		font-weight: bolder;
+		letter-spacing: -1px;
+		line-height: 1.2;
+		padding-right: 10px;
+		position: relative;
+		i {
+			color: white;
+			font-size: 13px;
+			margin-left: 8px;
+			position: absolute;
+			top: 16px;
+		}
+		span {
+			font-size: 30px;
+			margin-right: 10px;
 		}
 	}
 
@@ -88,6 +115,13 @@
 		font-weight: bolder;
 		margin-bottom: 0;
 		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.intro__plan__title {
+		color: white;
+		font-size: 20px;
+		line-height: 1.2;
 		text-transform: uppercase;
 	}
 
@@ -157,11 +191,13 @@
 		text-transform: none;
 	}
 
-	@media screen and ( min-width: 40em ) {
+	@media screen and ( min-width: 62em ) {
+
 		.intro {
 			border-bottom: 0;
 			box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
 		}
+
 		.intro__bg {
 			&:before {
 				background: rgba(0,0,0,.2);
@@ -173,16 +209,19 @@
 				top: 0;
 			}
 			img {
-				height: 1000px;
+				height: 480px;
+				width: 100%;
 			}
 		}
+
 		.intro__columns {
-			margin: 0 0 0 auto;
-			text-align: center;
 			.heading__title {
-				color: white;
+				color: #019cdf;
+				font-size: 34px;
+				letter-spacing: 0;
 				line-height: 1;
-				font-size: 44px;
+				text-align: left;
+				text-transform: uppercase;
 				&:first-of-type {
 					letter-spacing: -2px;
 				}
@@ -201,21 +240,9 @@
 		.intro__content {
 			bottom: 0;
 			left: 0;
-			margin-top: 0;
 			position: absolute;
 			right: 0;
-		}
-
-		.intro__header {
-			left: 0;
-			position: absolute;
-			right: 0;
-			top: 9rem;
-			&:before {
-				background-image: none;
-				background-position: 0;
-				filter: blur(0);
-			}
+			top: 0;
 		}
 
 		.intro__plan {
@@ -224,8 +251,48 @@
 			}
 		}
 
+
+		.intro__plan__list {
+			margin-right: 1rem;
+			position: relative;
+			transition: all .2s cubic-bezier( .4,0,.2,1 );
+
+			&:last-of-type {
+				margin-right: -4rem;
+			}
+
+			&:hover {
+				.intro__plan__content {
+					opacity: 1;
+					visibility: visible;
+				}
+				.intro__plan__title {
+					top: 0;
+				}
+			}
+
+			.intro__plan__content {
+				opacity: 0;
+				visibility: hidden;
+				transition: all .2s cubic-bezier( .4,0,.2,1 );
+			}
+
+			.intro__plan__title {
+				position: relative;
+				top: 94px;
+			}
+		}
+
 		.intro__plan__sub-title {
 			color: #535548;
+		}
+
+		.intro__plan__price {
+			font-size: 78px;
+			line-height: 1;
+			span {
+				font-size: 30px;
+			}
 		}
 
 

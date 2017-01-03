@@ -1,11 +1,12 @@
 
 	.button {
+		background-color: #dc8429;
 		font-weight: 700;
 		box-shadow: 0px 2px 2px 0px #522b60;
 		text-transform: uppercase;
-		background-image: linear-gradient(to bottom, #8c52a1 0%,#6a377d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background-image: linear-gradient(to bottom, #f19737 0%,#dc8429 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		&:hover {
-			background-color: #633971;
+			background-color: #dc8429;
 			background-image: none;
 		}
 	}
