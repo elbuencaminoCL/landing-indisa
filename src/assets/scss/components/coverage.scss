@@ -185,21 +185,48 @@
 	}
 
 	.coverage__more {
+		background-color: #d8ecf7;
 		position: relative;
-		&:before {
-			background-color: rgba( 164,124,177,.7 );
-			bottom: 0;
-			content: "";
-			left: 0;
-			position: absolute;
-			right: 0;
-			top: 0;
-		}
 	}
 
 	.coverage__more__content {
 		padding: 3rem 0;
 		position: relative;
+
+		.intro__plan__list {
+			border: 1px solid #666;
+			border-radius: 6px;
+			&:first-of-type,
+			&:nth-of-type(2),
+			&:nth-of-type(3) {
+				background-color: white;
+			}
+			.intro__plan__content {
+				opacity: 1;
+				visibility: visible;
+			}
+			.intro__plan__title {
+				top: 0;
+			}
+		}
+
+		.intro__plan__desc {
+			color: #333;
+		}
+
+		.intro__plan__price {
+			color: #019ce2;
+			margin-bottom: 0;
+		}
+
+		.intro__plan__title {
+			color: #019ce2;
+		}
+
+		.intro__plan__uf {
+			padding-right: 34px;
+			margin-bottom: 1rem;
+		}
 	}
 
 	.coverage__more__content__desc {
@@ -207,7 +234,7 @@
 	}
 
 	.coverage__more__content__title {
-		color: white;
+		color: #019ce2;
 		margin-bottom: 0;
 	}
 
@@ -281,14 +308,6 @@
 			.coverage__features__tab-content {
 				display: block !important;
 			}
-		}
-
-
-
-		.coverage__more {
-			background-image: url( '../img/iStock-497349720.jpg' );
-			background-position: center center;
-			background-size: cover;
 		}
 
 	}

@@ -27,6 +27,7 @@
 			flex: 0 0 100%;
 		}
 		&:nth-of-type( 2 ) {
+			display: none;
 			flex: 0;
 			height: 0;
 			opacity: 0;
@@ -50,6 +51,7 @@
 				}
 			}
 			&.visible {
+				display: inline-block;
 				flex: 1 1 0;
 				height: auto;
 				opacity: 1;
@@ -106,6 +108,8 @@
 				}
 				&:last-of-type {
 					display: inline-block;
+					position: relative;
+					z-index: 100;
 				}
 			}
 		}
