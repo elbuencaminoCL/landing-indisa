@@ -48,11 +48,12 @@
 	}
 
 	.intro__content {
-		background-color: rgba( 255,255,255,.7 );
+		// background-color: rgba( 255,255,255,.7 );
 	}
 
 	.intro__plan {
 		padding: 1rem 0;
+		margin-top: 3rem;
 		.columns {
 			padding-bottom: .5rem;
 			position: relative;
@@ -200,7 +201,8 @@
 
 		.intro__bg {
 			&:before {
-				background: rgba(0,0,0,.2);
+				height: 650px;
+				// background: rgba(0,0,0,.2);
 				bottom: 0;
 				content: "";
 				left: 0;
@@ -209,22 +211,20 @@
 				top: 0;
 			}
 			img {
-				height: 480px;
+				height: 650px;
 				width: 100%;
 			}
 		}
 
 		.intro__columns {
 			.heading__title {
+				margin-top: 5rem;
 				color: #019cdf;
 				font-size: 34px;
-				letter-spacing: 0;
-				line-height: 1;
+				letter-spacing: 2;
+				line-height: 1.2;
 				text-align: left;
 				text-transform: uppercase;
-				&:first-of-type {
-					letter-spacing: -2px;
-				}
 			}
 			.heading__sub-title {
 				color: white;
