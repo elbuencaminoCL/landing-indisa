@@ -4,6 +4,7 @@
 	let $headerContainer = $( '#headerContainer' );
 	let $headerLogoFigure = $( '.header__logo' );
 	let $headerLogo = $( '#headerLogo' );
+	let $initialModal = $( '#initialModal' );
 
 	$headerMenu.on( 'click', () => {
 		$headerMenu.toggleClass( 'visible' );
@@ -33,3 +34,7 @@
 		$headerLogo.removeClass( 'visible' );
 
 	})
+
+	let popup = new Foundation.Reveal( $initialModal );
+
+	popup.open();

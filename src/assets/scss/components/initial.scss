@@ -1,0 +1,39 @@
+
+	.initial-modal {
+		background-color: rgba( 91, 132, 186, .8 );
+		.close-button {
+			color: white;
+			font-size: 50px;
+		}
+	}
+
+	.initial-modal__buttons {
+		.button {
+			margin: 0 1rem;
+		}
+	}
+
+	.initial-modal__container {
+		height: 100%;
+	}
+
+	.initial-modal__description {
+		color: white;
+		margin-bottom: 0;
+		&:first-of-type {
+			margin-top: 2rem;
+		}
+		&:last-of-type {
+			margin-bottom: 2rem;
+		}
+	}
+
+	.initial-modal__row {
+		height: 100%;
+		position: relative;
+	}
+
+	.initial-modal__title {
+		color: white;
+		line-height: 1.2;
+	}
