@@ -6,6 +6,51 @@
 	let $headerLogo = $( '#headerLogo' );
 	let $initialModal = $( '#initialModal' );
 
+	let $localStorage = $( '.localStorage' );
+	let $isapreLink = $( '.isapreLink' );
+	let $fonasaLink = $( '.fonasaLink' );
+
+
+
+	if( localStorage.getItem( 'ip' ) ) {
+		$initialModal.addClass( 'hidden' );
+	}
+	else {
+
+		let popup = new Foundation.Reveal( $initialModal );
+
+		popup.open();
+
+		$localStorage.on( 'click', (e) => {
+			e.preventDefault();
+			$.getJSON("http://ipinfo.io",
+		    function(data) {
+		    	localStorage.setItem( 'ip', data.ip );
+		    	console.log( localStorage.getItem( 'ip' ) );
+		  	});
+		})
+
+		$isapreLink.on( 'click', (e) => {
+			e.preventDefault();
+			$.getJSON("http://ipinfo.io",
+		    function(data) {
+		    	window.location.replace("/isapre.html");
+		    	localStorage.setItem( 'ip', data.ip );
+		    	console.log( localStorage.getItem( 'ip' ) );
+		  	});
+		})
+
+		$fonasaLink.on( 'click', (e) => {
+			e.preventDefault();
+			$.getJSON("http://ipinfo.io",
+		    function(data) {
+		    	window.location.replace("/");
+		    	localStorage.setItem( 'ip', data.ip );
+		    	console.log( localStorage.getItem( 'ip' ) );
+		  	});
+		})
+	}
+
 	$headerMenu.on( 'click', () => {
 		$headerMenu.toggleClass( 'visible' );
 		$headerList.toggleClass( 'visible' );
@@ -34,7 +79,3 @@
 		$headerLogo.removeClass( 'visible' );
 
 	})
-
-	let popup = new Foundation.Reveal( $initialModal );
-
-	popup.open();

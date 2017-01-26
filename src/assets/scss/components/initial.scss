@@ -5,6 +5,9 @@
 			color: white;
 			font-size: 50px;
 		}
+		&.hidden {
+			display: none !important;
+		}
 	}
 
 	.initial-modal__buttons {

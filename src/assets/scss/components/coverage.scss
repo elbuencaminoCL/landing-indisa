@@ -311,3 +311,164 @@
 		}
 
 	}
+
+
+	// Isapre styles
+
+	.coverage-isapre__features {
+		margin: 3rem 0;
+	}
+
+	.coverage-isapre__features__image {
+		position: relative;
+		&:before {
+			background-color: rgba( 0,0,0,.3 );
+			bottom: 0;
+			content: "";
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	.coverage-isapre__features__image-caption {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+	}
+
+	.coverage-isapre__features__image__title {
+		color: white;
+		font-weight: bolder;
+		line-height: 1;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.coverage-isapre__features__list {
+		background-color: #e6e6e6;
+		padding: 1rem .9rem;
+	}
+
+	.coverage-isapre__features__list-item {
+		border-bottom: 1px solid #aaa;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		padding: 1rem 0;
+		span {
+			color: #2d76c5;
+		}
+		.columns {
+			&:first-of-type {
+				padding: 0;
+			}
+			&:last-of-type {
+				padding-right: 0;
+			}
+		}
+		&:last-of-type {
+			border-bottom: 0;
+		}
+	}
+
+	.coverage-isapre__features__list__percentage {
+		color: #2d76c5;
+		font-size: 24px;
+		font-weight: bolder;
+		line-height: 1.2;
+		margin-bottom: 0;
+		text-align: center;
+	}
+
+	.coverage-isapre__features__list__title {
+		color: #58555c;
+		font-size: 13px;
+		font-weight: bolder;
+		margin-bottom: 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.coverage-isapre__intro {
+		.secureDate {
+			max-width: 300px;
+		}
+	}
+
+	.coverage-isapre__intro__date {
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+	}
+
+	.coverage-isapre__intro__description {
+		margin-bottom: 0;
+	}
+
+	.coverage-isapre__intro__select {
+		max-width: 400px;
+	}
+
+	.coverage-isapre__intro__title {
+		margin-bottom: 3rem;
+	}
+
+	.coverage-isapre__list__row {
+		background-color: #ededed;
+		border-radius: 6px;
+		border: 1px solid #989898;
+		color: #2c75c2;
+		padding: 1rem 0;
+		text-transform: uppercase;
+	}
+
+	.coverage-isapre__list__row__desc {
+		line-height: 1.4;
+		margin-bottom: 0;
+	}
+
+	.coverage-isapre__list__row__title {
+		font-weight: bolder;
+	}
+
+	.coverage-isapre__more {
+		background-image: url( 'http://media.istockphoto.com/photos/handicap-patient-at-the-hospital-picture-id510392946' );
+		background-position: center center;
+		background-size: cover;
+		position: relative;
+		&:before {
+			background-color: rgba( 164,124,177,.7 );
+			bottom: 0;
+			content: "";
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	.coverage-isapre__more__content {
+		padding: 3rem 0;
+		position: relative;
+	}
+
+	.coverage-isapre__more__content__desc {
+		color: white;
+	}
+
+	.coverage-isapre__more__content__title {
+		color: white;
+		margin-bottom: 0;
+	}
+
+	@media screen and ( min-width: 48em ) {
+		.coverage-isapre__features__list {
+			min-height: 496px;
+		}
+
+		.coverage-isapre__list__row {
+			max-width: 800px;
+		}
+
+	}

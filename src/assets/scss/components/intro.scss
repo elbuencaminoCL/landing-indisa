@@ -313,3 +313,122 @@
 			padding-left: 40px;
 		}
 	}
+
+	// Isapre styles
+
+	.intro-isapre {
+		background-image: url( '../img/banner.jpg' );
+		background-size: cover;
+		padding: 3rem 0 0;
+		position: relative;
+		&:before {
+			background: rgba(0,0,0,.2);
+			bottom: 0;
+			content: "";
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	.intro-isapre__button {
+		margin-bottom: 0;
+		h3,
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	.intro-isapre__columns {
+		margin: 0 0 0 auto;
+		text-align: center;
+		.heading__title {
+			color: white;
+			line-height: 1;
+			&:first-of-type {
+				letter-spacing: -2px;
+			}
+		}
+		.heading__sub-title {
+			color: white;
+			font-size: 26px;
+			line-height: 1.2;
+			margin-bottom: 1rem;
+			text-transform: uppercase;
+		}
+	}
+
+	.intro-isapre__header {
+		padding: 3rem 0 9rem;
+		position: relative;
+	}
+
+	.intro-isapre__content {
+		background-color: rgba( 255,255,255,.7 );
+	}
+
+	.intro-isapre__plan {
+		padding: 1rem 0;
+		.columns {
+			position: relative;
+		}
+	}
+
+	.intro-isapre__plan__description {
+		color: #535548;
+		margin-bottom: 2rem;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	.intro-isapre__plan__sub-title {
+		color: #535548;
+		font-size: 13px;
+		font-weight: bolder;
+		text-transform: uppercase;
+	}
+
+	.intro-isapre__price {
+		padding: 3rem 0;
+	}
+
+	.intro-isapre__price__amount {
+		color: #724085;
+		font-size: 70px;
+		font-weight: bolder;
+		line-height: 1;
+		padding-left: 165px;
+		margin-bottom: 0;
+		span {
+			font-size: 35px;
+		}
+		.intro-isapre__price__second-amount {
+			color: #333;
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+
+	.intro-isapre__price__sub-title {
+		color: #5d7aa2;
+		font-size: 22px;
+		text-transform: uppercase;
+	}
+
+	.intro-isapre__price__sub-amount {
+		font-weight: bold;
+	}
+
+	.intro-isapre__price__title {
+		font-weight: bold;
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+
+	@media screen and ( min-width: 48em ) {
+		.intro-isapre__price__sub-amount {
+			padding-left: 9rem;
+		}
+	}
